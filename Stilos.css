@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(Posible_background.webp);
+}
+.Nall {
+    display: none;
+}
+.Nave {
+    background-color: #F0FF33;
+    height: 80px;
+}
+.barritas {
+    width: 50px;
+    float: left;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 30px 19px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover {
+    background: #9CFF33;
+    transition: 0,5s;
+    border: solid white 2px;
+
+ }
+ .salamandra{
+    font-size: 20px;
+    color: white;
+    line-height: 80px;
+    margin-top: 20px ;
+ }
+
+
+p.Textito {
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    border: white solid 1px;
+    width: 90vw;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+.Textito__1 {
+    color: white;
+    float: left;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    border: white solid 1px;
+    width: 47vw;
+    border-radius: 5px;
+    display: inline-block;
+}
+.critic {
+    width: 40vw;
+    float: right;
+    margin-top: 20px;
+    margin-right: 90px;
+    max-width: 1000px;
+    min-width: 320px;
+    border: black solid;
+    display: inline-block;
+}
+.Tel{
+    width: 39vw;
+    height: 40vh;
+}
+.Nega {
+    width: 100%;
+}
+#Cache {
+    display: none;
+}
+.Formi {
+    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+}
+.STL {
+    margin-left: 500px ;
+    margin-top: 30px;
+}
+ @media (max-width: 955px) {
+    nav ul li a {
+        font-size: 15px;
+    }
+    .barritas {
+        display: none;
+    }
+ }
+ @media (max-width: 860px) {
+    section {
+        background:  #F0FF33;
+    }
+    .barritas {
+        display: block;
+    }    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        text-align: center;
+        transition: all;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover {
+        background: greenyellow;
+        color: black;
+        border: solid white 2px;
+    }
+    #Cache:checked ~ ul {
+        left: 0;
+        background: #F0FF33;
+        .Nall {
+            display: block;
+        }
+    }
+ }
